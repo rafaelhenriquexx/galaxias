@@ -3,8 +3,41 @@
   margin: 0;
   box-sizing: border-box;
 }
-.box{
+:root {
+  font-size: 62.5%;
+}
+body {
+  background: var(--platform-aliases-background, #121214);
+  font-size: 1.6rem;
+  font-family: Mulish;
+  font-weight: 600;
+}
+h1 {
+  color: #02799d;
+  font-size: 5.8287rem;
+  font-weight: 900;
+}
+h2 {
+  color: #e1e1e6;
+  font-size: 3.2rem;
+}
+p {
+  color: #c4c4cc;
+  font-size: 1.9381rem;
+}
+.conteiner{
+  width: 100%;
+  margin: auto;
+}
+.conteiner header {
+  border: 1px solid white;
+}
+.box {
   display: grid;
+  margin: 6.3rem 10.0rem 10.0rem ;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid black;
+  border: 1px solid white;
+}
+.item{
+  border: 1px solid white;
 }
