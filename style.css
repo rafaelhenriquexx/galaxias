@@ -12,6 +12,9 @@ body {
   font-family: Mulish;
   font-weight: 600;
 }
+img {
+  width: 100%;
+}
 h1 {
   color: #02799d;
   font-size: 5.8287rem;
@@ -20,24 +23,69 @@ h1 {
 h2 {
   color: #e1e1e6;
   font-size: 3.2rem;
+  padding: 2.5rem 3.2rem 2.4rem;
 }
 p {
   color: #c4c4cc;
+  padding: 0rem 3.2rem 3.2rem;
   font-size: 1.9381rem;
 }
-.conteiner{
+.conteiner {
+  display: grid;
   width: 100%;
   margin: auto;
+  gap: 4.4rem;
+  padding-bottom: 14.0rem;
 }
 .conteiner header {
-  border: 1px solid white;
+  margin: 7.3rem 10rem 4.4rem 10rem;
+}
+.conteiner header h2{
+  padding: 0.8rem 0rem 0rem;
 }
 .box {
   display: grid;
-  margin: 6.3rem 10.0rem 10.0rem ;
+  gap: 6rem;
+  margin: 0rem 10rem 0rem;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid white;
 }
-.item{
-  border: 1px solid white;
+.item {
+  border-radius: 8px;
+  border: 2px solid #323238;
+  background: #202024;
+}
+@media(max-width: 1000px){
+  .box {
+    gap: 6rem;
+    margin: 0rem 10rem 0rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box > div:nth-child(3){
+    grid-column: 1/-1;
+  }
+}
+@media(max-width: 750px){
+  .box {
+    gap: 6rem;
+    margin: 0rem 10rem 0rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width: 450px){
+  .conteiner {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    gap: 4.4rem;
+    padding-bottom: 7.3rem;
+  }
+  .conteiner header {
+    margin: 7.3rem 4.0rem 4.4rem;
+  }
+  .box{
+    margin: 0rem 4.0rem 0rem;
+  }
+  h1 {
+    font-size: 4.8287rem;
+  }
 }
