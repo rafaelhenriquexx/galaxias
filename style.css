@@ -30,6 +30,10 @@ p {
   padding: 0rem 3.2rem 3.2rem;
   font-size: 1.9381rem;
 }
+.main{
+  display: grid;
+  gap: 4.4rem;
+}
 .conteiner {
   display: grid;
   width: 100%;
